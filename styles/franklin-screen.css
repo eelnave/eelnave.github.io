@@ -1,0 +1,54 @@
+h1 {
+    display: inline;
+    font-size: 28px;
+}
+
+#glass {
+    float: right;
+}
+
+#sun {
+    float: left;
+}
+
+header {
+    background-color: aqua;
+    text-align: center;
+}
+
+nav {
+    width: auto;
+    margin: auto;
+}
+
+nav li {
+    display: inline-block;
+    padding: 2px;
+    border: 1px solid black;
+}
+
+.table-header {
+    background-color: black;
+    color: white;
+    padding: 2px;
+    text-align: center;
+}
+
+#weather-info {
+    border: 1px solid black;
+}
+
+.table-body, h2{
+    text-align: center;
+}
+
+header img {
+    width: 30px;
+}
+
+main img {
+    width: 300px;
+    display: block;
+    margin: 0px auto 0px auto;
+}
+
