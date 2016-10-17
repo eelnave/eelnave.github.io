@@ -26,10 +26,16 @@ nav {
     text-align: center;
 }
 
+ul{
+    margin: 0;
+}
+
 nav li {
     display: inline-block;
     padding: 2px;
     border: 1px solid black;
+    width: 23%;
+    height: 100%;
 }
 
 .table-header {
