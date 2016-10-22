@@ -1,0 +1,33 @@
+nav {
+    background-color: #FFBA07;
+    color: #396E94;
+}
+
+nav li{
+    display: inline-block;
+    padding: 2px;
+    width: 10%;
+    height: 100%;
+    margin: auto;
+}
+
+#content{
+    width: 960px;
+    margin: auto;
+}
+
+#initial-section {
+    background-color: #FFBA07;
+}
+        
+h1,h2,h3,h4,h5,h6 {
+    color: #396E94;
+}
+        
+.text {
+    color: #396E94;
+}
+
+#bottom-section{
+    text-align: center;
+}
