@@ -6,85 +6,66 @@
     <title>Franklin Weather Report</title>
     <meta name="viewport" content="width = device-width">
     <link rel="stylesheet" type="text/css" href="../styles/franklin-screen.css">
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline" rel="stylesheet"> </head>
 
 <body>
     <div id="wrapper">
-
-
-
-        <header>
-            <h1>Local Weather</h1>
-        </header>
-        
-        <nav id = "links">
-                <ul>
-                    <a href="first-franklin-weather-page.html">
-                        <li>Springfield</li>
-                    </a>
-                    
-                    <a href="greenville-weather.html"> 
-                        <li>Greenville</li> 
-                    </a>
-                </ul>
+        <header id="page-header"></header>
+        <nav id="links">
         </nav>
-
-
-
         <main>
-            
-            <div id = "sunny"><img alt="sun icon" src="../images/sun-pin.jpg" class = "sun"></div>
-            <div class = "table-header" id="weather-info">
-                <p class = "div-header">Franklin, ID</p><br>
-                <p class = "table-body">Sunny</p><br>
-                <p class = "table-body">High: 90 Low:66</p><br>
-                    
-                <ul>
-                <li>0 : 67</li>
-                <li>1 : 67</li>
-                <li>2 : 69</li>
-                <li>3 : 69</li>
-                <li>4 : 69</li>
-                <li>5 : 70</li>
-                <li>6 : 69</li>
-                <li>7 : 72</li>
-                <li>8 : 74</li>
-                <li>9 : 77</li>
-                <li>10 : 79</li>
-                <li>11 : 84</li>
-                <li>12 : 84</li>
-                <li>13 : 86</li>
-                <li>14 : 88</li>
-                <li>15 : 90</li>
-                <li>16 : 90</li>
-                <li>17 : 85</li>
-                <li>18 : 83</li>
-                <li>19 : 79</li>
-                <li>20 : 74</li>
-                <li>21 : 70</li>
-                <li>22 : 68</li>
-                <li>23 : 66</li>
+            <div id="sunny"><img alt="sun icon" src="../images/sun-pin.PNG" class="sun"></div>
+            <div class="weather-info">
+                <section id="city-info">
+                    <p class="div-header">Franklin, ID</p>
+                    <br>
+                    <p class="table-body">Sunny</p>
+                    <br>
+                    <p class="table-body">High: 90 Low:66</p>
+                    <br> </section>
+                <ul class="hour">
+                    <section id="hour-data">
+                        <br>
+                        <section id="am">
+                            <h2>AM</h2>
+                            <li>12:00 : 67</li>
+                            <li>1:00 : 67</li>
+                            <li>2:00 : 69</li>
+                            <li>3:00 : 69</li>
+                            <li>4:00 : 69</li>
+                            <li>5:00 : 70</li>
+                            <li>6:00 : 69</li>
+                            <li>7:00 : 72</li>
+                            <li>8:00 : 74</li>
+                            <li>9:00 : 77</li>
+                            <li>10:00 : 79</li>
+                            <li>11:00 : 84</li>
+                        </section>
+                        <br>
+                        <section id="pm">
+                            <h3>PM</h3>
+                            <li>12:00 : 84</li>
+                            <li>1:00 : 86</li>
+                            <li>2:00 : 88</li>
+                            <li>3:00 : 90</li>
+                            <li>4:00 : 90</li>
+                            <li>5:00 : 85</li>
+                            <li>6:00 : 83</li>
+                            <li>7:00 : 79</li>
+                            <li>8:00 : 74</li>
+                            <li>9:00 : 70</li>
+                            <li>10:00 : 68</li>
+                            <li>11:00 : 66</li>
+                        </section>
+                    </section>
                 </ul>
-                
             </div>
-                
         </main>
-
-
-
-        <footer>
-            <ul>
-                <li>Evan Peterson</li>
-                <li>Last Updated 10/14/2016</li>
-            </ul>
+        <footer id = "page-footer">
         </footer>
-        
-        <div id = "wireframes">
-            <img alt="iphone" src="../images/iphone-revision.jpeg">
-            <img alt="ipad" src="../images/ipad-revision.jpg">
-            <img alt="browser" src="../images/browser-revision.jpg">
-        </div>
-
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="../js/modules.js"></script>
+        <div id="wireframes"> <img alt="iphone" src="../images/iphone-revision.jpeg"> <img alt="ipad" src="../images/ipad-revision.jpg"> <img alt="browser" src="../images/browser-revision.jpg"> </div>
     </div>
 </body>
 

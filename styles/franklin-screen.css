@@ -120,6 +120,9 @@ nav li {
     }
 
 */
+body{
+    font-family: 'Cabin', sans-serif;
+}
 
 header{
     display: flex;
@@ -131,11 +134,15 @@ header{
     width: 150px;
 }
 
+nav{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    background-color: #FFB610
+}
+
 nav ul{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border: 1px black solid;
     padding: 0px;
     margin: 0px;
 }
@@ -143,19 +150,14 @@ nav ul{
 nav ul li, a{
     display: flex;
     width: 100%;
-    padding: 5px;
+    margin: 5px;
 }
 
-nav ul li:hover{
-    background-color: skyblue;
-    margin: 0px;
-}
-
-#sunny, #weather-info{
+#sunny, .weather-info{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5px;
+    text-align: center;
 }
 
 main p{
@@ -177,11 +179,11 @@ body{
 @media screen and (min-width: 550px){
     main {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row nowrap;
         justify-content: space-around;
     }
     
-    #weather-info {
+    .weather-info {
         flex-direction: column;
     }
 }
@@ -190,21 +192,91 @@ body{
     .sun{
         width: 200px;
     }
+    
+    #hour-data{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #am{
+        display: flex;
+        flex-direction: column;
+        padding-right: 25px;
+    }
+    
+    #pm{
+        display: flex;
+        flex-direction: column;
+        padding-left: 25px;
+    }
+    
+    h2{
+        margin-bottom: 5px;
+    }
+    
+    h3{
+        margin-bottom: 7px;
+    }
 }
 
 @media screen and (min-width: 900px){
     main{
         display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
     }
     
-    #weather-info {
-        border: 1px black solid;
+    main div{
+        margin-top: 0px;
+    }
+    
+    #hour-data{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #am, #pm{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    #am li, #pm li{
+        display: flex;
+        flex: auto;
         padding: 5px;
+    }
+    
+    #am{
+        padding-right: 0px;
+        padding-left: 25px;
+    }
+    
+    h2, h3{
+        align-self: flex-start;
+        margin: 0 auto;
+    }
+    
+    #city-info{
+        width: 100%;
+        background-color: #FF7100;
+        padding-top: 5px;
+    }
+    
+    #sunny{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        width: 50%;
+        background-color: #00C9C2;
+    }
+    
+    .weather-info{
+        background-color: #3A8FE1;
     }
     
     .sun{
         width: 125px;
+    }
+    #wireframes{
+        display: block;
     }
 }
