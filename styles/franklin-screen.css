@@ -120,6 +120,20 @@ nav li {
     }
 
 */
+
+#sunny{
+    background-color: #00C9C2;
+}
+
+.weather-info{
+        background-color: #3A8FE1;
+    }
+
+#city-info{
+        background-color: #FF7100;
+        width: 100%;
+}
+
 body{
     font-family: 'Cabin', sans-serif;
 }
@@ -193,6 +207,14 @@ body{
         width: 200px;
     }
     
+    #sunny{
+        width: 50%;
+    }
+    
+    .weather-info{
+        width: 50%;
+    }
+    
     #hour-data{
         display: flex;
         justify-content: space-between;
@@ -257,7 +279,6 @@ body{
     
     #city-info{
         width: 100%;
-        background-color: #FF7100;
         padding-top: 5px;
     }
     
@@ -266,12 +287,8 @@ body{
         flex-flow: row nowrap;
         justify-content: center;
         width: 50%;
-        background-color: #00C9C2;
     }
     
-    .weather-info{
-        background-color: #3A8FE1;
-    }
     
     .sun{
         width: 125px;
