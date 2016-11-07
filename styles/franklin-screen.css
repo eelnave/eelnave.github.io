@@ -197,6 +197,10 @@ body{
         justify-content: space-around;
     }
     
+    .weather-info, #sunny{
+        width: 50%;
+    }
+    
     .weather-info {
         flex-direction: column;
     }
