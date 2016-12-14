@@ -1,0 +1,81 @@
+body{
+    background-color: #edede8;
+    margin: 0;
+}
+
+#logo{
+    width: 125px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+}
+
+p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+}
+
+header h1{
+    margin: auto;
+    font-size: 48px;
+}
+
+#navigation{
+    background-color: #7De4e4;
+    margin-top: 0;
+    height: 50px;
+}
+
+#poster{
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+}
+
+#review{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.sub-menu-parent { position: relative; }
+
+.sub-menu { 
+  visibility: hidden; /* hides sub-menu */
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 125%;
+  transform: translateY(-2em);
+  z-index: -1;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.sub-menu-parent:hover .sub-menu {
+  visibility: visible; /* shows sub-menu */
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+
+.featured-video{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+nav a { color: #4a001a; padding: 0.5em 1em; text-decoration: none; }
+nav a:hover { color:white; }
+nav ul,
+nav ul li { list-style-type: none; padding: 0; margin: 0; }
+
+nav > ul { background: #ab708c; display: flex; justify-content: space-around; align-content: center;}
+nav > ul > li { display: flex;font-size: 150%;}
+nav > ul > li:first-child { border-left: none; }
+
+.sub-menu {
+  background: #DDD;
+}
