@@ -1,5 +1,5 @@
 $(function() {
-$("#page-header").load("../modules/header.html");
-$("#links").load("../modules/nav.html");
-$("#page-footer").load("../modules/footer.html");
+$("#page-header").load("/final/modules/header.html");
+$("#links").load("/final/modules/nav.html");
+$("#page-footer").load("/final/modules/footer.html");
 });
