@@ -1,8 +1,5 @@
-$(function(){
-        $('.navigation > li').hover(function(){
-            
-            $(this).children("ul").slideToggle(200);
-            
-        })
-
-	})
+$(function () {
+    $('.navigation > li').hover(function () {
+        $(this).children("ul").slideToggle(200);
+    })
+})
