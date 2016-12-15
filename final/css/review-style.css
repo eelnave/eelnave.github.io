@@ -7,6 +7,10 @@ body {
     width: 125px;
 }
 
+#links{
+    width: 110%;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -28,11 +32,22 @@ header h1 {
     height: 50px;
 }
 
-#movie-posters {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    #movie-posters{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #movies{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+#infotext{
+    display: none;
 }
+
 
 #movie-posters img{
     width: 200px;
@@ -42,12 +57,16 @@ header h1 {
     padding-top: 10px;
 }
 
-h1 {
+h1, h2{
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
 
-#review {
+#infotext{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#review, footer {
     margin-left: 15px;
     margin-right: 15px;
 }
@@ -62,7 +81,7 @@ h1 {
     opacity: 0;
     position: absolute;
     top: 100%;
-    left: 10px;
+    right: 28px;
     width: 100%;
     transform: translateY(-2em);
     z-index: -1;
@@ -124,4 +143,40 @@ nav > ul > li:first-child {
 
 .sub-menu {
     background: #DDD;
+}
+
+@media (min-width: 750px){
+    #movie-posters{
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    #movies{
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    #infotext{
+        display: block;
+    }
+}
+    
+@media (min-width: 1200px){
+    #movie-posters{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #movies{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .sub-menu{
+        width: 125%;
+    }
+    
 }
